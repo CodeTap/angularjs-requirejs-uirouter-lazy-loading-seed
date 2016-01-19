@@ -19,3 +19,5 @@ docs/
 *.DS_Store
 *.out
 *.so
+.gitignore
+.gitattributes

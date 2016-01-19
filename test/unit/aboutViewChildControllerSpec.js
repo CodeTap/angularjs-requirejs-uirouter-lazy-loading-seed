@@ -1,6 +1,4 @@
-/**
- * Created by aaron on 1/18/2016.
- */
+
 'use strict';
 
 module('app', function(app)

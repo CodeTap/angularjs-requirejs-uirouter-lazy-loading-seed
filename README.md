@@ -41,7 +41,7 @@ Once you run either of those the node server with the website will be located on
 
 ## Testing
 The seed comes with examples for running both [Karma](https://karma-runner.github.io/0.13/index.html)
-unit tests and {Protractor](https://angular.github.io/protractor/#/) end to end tests.  Both Karma
+unit tests and [Protractor](https://angular.github.io/protractor/#/) end to end tests.  Both Karma
 and Protractor have to be installed in order to run the tests.
 
 ### Karma Unit Tests
