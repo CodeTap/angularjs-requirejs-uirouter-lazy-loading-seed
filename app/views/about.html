@@ -1,0 +1,61 @@
+<div id="wrap">
+    <div ui-view="menu"></div>
+
+    <section id="main">
+        <div class="container">
+            <h1 app-color="blue">{{page.heading}}</h1>
+            <p>This is the 'about us' page, it has child views you can see by clicking on the links below. You can also
+                have the page load directly with a child view if you use the drop down menu vs the about link. Child
+                views have their own controllers just as a named view can. However, a child's controller can access
+                the parents.
+            </p>
+
+            <div class="col-md-4">
+                <a ui-sref="about.child">Show Child View 1</a>
+            </div>
+            <div class="col-md-4">
+                <a ui-sref="about.child2">Show Child View 2</a>
+            </div>
+            <div class="col-md-4">
+                <a ui-sref="about">No Child View</a>
+            </div>
+
+            <div ui-view></div>
+
+
+            <div ui-view="bottom"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Multiple Named Views and Child Views</h2>
+                    <p>Our about page contains both multiple named views and child views.  The menu, bottom, and footer
+                        are named views. It also contains two child views that can be changed with out leaving the main
+                        view.
+                    </p>
+                    <div class="well">
+                        Index
+                        <div class="well">
+                            About
+                            <div class="well">
+                                Menu Content View
+                            </div>
+                            <div class="well">
+                                About Child View
+                            </div>
+                            <div class="well">
+                                About Bottom View
+                            </div>
+                            <div class="well">
+                                Footer View
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="push"></div>
+</div>
+
+<div ui-view="footer"></div>
