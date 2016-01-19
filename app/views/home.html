@@ -1,0 +1,81 @@
+<div id="wrap">
+    <div ui-view="menu"></div>
+
+        <section id="main">
+            <div class="container">
+            <h1>{{page.heading}}</h1>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>This is an example single page application written in AngularJS and Ui-Router.  It uses RequireJS and
+                            implements lazy loading. The About Page contains child views and multiple named views, and the Contact
+                            page contains only named views.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Testing the App</h2>
+                        <p>
+                            The App comes complete with karma test runners and protractor.  Karma will run several unit test
+                            where protractor the protractor tests will make sure the transition between states happens
+                            properly.  It also uses Karma's coverage plug-in so you can see the amount of code covered
+                            by unit tests.
+                        </p>
+                        <p>
+                            Karma unit tests are run using the following command.
+                        </p>
+                        <div class="well black-well">
+                            npm run test
+                        </div>
+                        <p>
+                            Protractor End to End tests are run using the following command.
+                        </p>
+                        <div class="well black-well">
+                            npm run protractor
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Why UI Router?</h2>
+                        <p>Ui-router is more powerful for larger scale applications than normal ngRoute.  The ability
+                        to do the following separates it as the easy choice: </p>
+                        <ul>
+                            <li>ui-router allows for nested views and multiple named views. This is very useful with larger app where you may have pages that inherit from other sections.</li>
+                            <li>states allow you to map and access different information about different states and you can easily pass information between states via $stateParams.</li>
+                            <li>ui-router allows for you to have strong-type linking between states based on state names. Change the url in one place will update every link to that state when you build your links with ui-sref. Very useful for larger projects where URLs might change.</li>
+                        </ul>
+                        <p>Combining ui-router with lazy loading just makes creating a large scale angular application
+                        easier to manage. Instead of having to declare all dependencies within the head of every file
+                        requirejs can do that heavy lifting for you.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Application Structure</h2>
+                        <p>
+                            Due requirejs and karma understanding the application structure is important so everything works
+                            properly with the base paths.
+                        </p>
+                        <div class="well black-well">
+                            <p>Project Root</p>
+                            <p>app/</p>
+                            <p>-----assets/</p>
+                            <p>-----bower_components/</p>
+                            <p>-----js-src/</p>
+                            <p>------------controllers/</p>
+                            <p>------------directives/</p>
+                            <p>------------services/</p>
+                            <p>-----views/</p>
+                            <p>node_modules/</p>
+                            <p>test/</p>
+                            <p>config Files ...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    <div id="push"></div>
+</div>
+
+<div ui-view="footer"></div>

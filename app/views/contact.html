@@ -1,0 +1,65 @@
+<div id="wrap">
+    <div ui-view="menu"></div>
+
+    <section id="main" ng-controller="ContactViewController">
+        <div class="container">
+            <h1 app-color="green">{{page.heading}}</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>This is the Contact Us view</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a dictum nibh. Aliquam erat volutpat. Quisque eget
+                        bibendum nisi, id mattis sem. Vivamus semper turpis ut mauris tempor blandit. Etiam magna metus, ultrices eu velit
+                        eget, viverra pharetra sapien. Nulla sit amet auctor dui. Pellentesque semper sem vel neque sollicitudin commodo.
+                        Sed pharetra nisl quis eros tristique rutrum. Nam libero eros, semper et luctus sed, condimentum vel magna. Aliquam
+                        tincidunt sed neque non euismod. Nulla auctor mi ac rhoncus tempor. Quisque ultrices nec tortor quis mollis.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6" ui-view="left-col"></div>
+                <div  class="col-xs-6" ui-view="right-col"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>The Contact Us Set Up</h2>
+                    <p>
+                       It only contains multiple named views and not any child views. The contact page sits within the
+                        index view, as do all other views in this single page app.  Within the contact page however
+                        lives multiple named views.  This allows for separation of our pages sub sections with ease.
+                    </p>
+                    <div class="well">
+                        Index
+                        <div class="well">
+                            Contact
+                            <div class="well">
+                                Menu Content View
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="well">
+                                        Left Contact View
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="well">
+                                        Right Contact View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="well">
+                                Footer View
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="push"></div>
+</div>
+
+<div ui-view="footer"></div>
