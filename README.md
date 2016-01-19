@@ -6,6 +6,10 @@ An example of how to implement lazy loading in [AngularJS](http://angularjs.org/
 This is a small scale application of what can be done to lay the foundation of making a large scale
 application.
 
+Credit must be given to [ifyio](http://github.com/ifyio/angularjs-lazy-loading-with-requirejs) since it
+was his original project taken and expanded upon.  Adding the use of Ui-Router, Karma Tests Examples,
+Protractor Tests Examples, and Lazy Loading with Ui-Router was built on the foundation he laid out.
+
 
 ## How it works
 A load controller function uses a promise and inserting the controller name into the require function.
