@@ -1,0 +1,49 @@
+{
+  "name": "angularjs-requirejs-uirouter-lazy-loading-seed",
+  "version": "1.0.0",
+  "description": "This is a starter project for Anuglar Js that comes with lazy loading by default",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeTap/angularjs-requirejs-uirouter-lazy-loading-seed"
+  },
+  "author": "Aaron (aaronmichael32088@gmail.com)",
+  "license": "MIT",
+  "keywords": [
+    "Lazy",
+    "Loading",
+    "AngularJS"
+  ],
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "node server.js ",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor protractor.conf.js"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "express": "~3.2.0"
+  },
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-coverage": "^0.5.3",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-junit-reporter": "^0.3.8",
+    "karma-phantomjs-launcher": "^0.1.2",
+    "karma-requirejs": "^0.2.1",
+    "phantomjs": "^1.9.7-1",
+    "protractor": "*",
+    "protractor-jasmine2-html-reporter": "0.0.5",
+    "requirejs": "^2.1.11"
+  }
+}
